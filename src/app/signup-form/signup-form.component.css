@@ -50,12 +50,20 @@ body {
 		/*... so that we can use a sibling selector.*/
 	}
 
-	:host(.my-class) {
-		background: lawngreen;
+	.my-class-hidden input {
+		padding: 20px 5px 5px 5px
 	}
 
-	.my-class {
-		background: fuchsia;
+	.my-class-hidden label {
+		display: none;
+	}
+
+	/*.my-class {
+		background: fuchsia
+	}*/
+
+	.my-class label {
+		display: none;
 	}
 
 	.my-class2 {
