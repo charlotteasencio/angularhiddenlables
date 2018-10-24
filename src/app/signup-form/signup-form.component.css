@@ -1,0 +1,116 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+	color  : #888888;
+	background: #fffdfa;
+	font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+	}
+	
+	form, ul, li, input, label {
+		box-sizing: border-box;
+		display: block;
+	}
+	
+	ul {
+		background-color: #fffdfa;
+		border: 5px solid #888888;
+		list-style-type: none;
+		margin: 3em auto;
+		padding: 0;
+		width: 350px;
+	}
+	
+	li {
+		border-bottom: 1px solid lighten(#888888, 25);
+		margin-top: -1px; 
+		position: relative;
+	}
+	
+	label, input {
+		transition: color 0.4s ease, background-color 0.1s ease-in-out;
+	}
+	
+	label {
+		/* labels are after the input in the HTML...*/
+		color: lighten(#888888, 15);
+		font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+		font-size: 70%;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		
+		/* ... move it up top ... */
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		
+		/*... so that we can use a sibling selector.*/
+	}
+
+	:host(.my-class) {
+		background: lawngreen;
+	}
+
+	.my-class {
+		background: fuchsia;
+	}
+	
+	.pinkShit input{
+		padding: 10px 5px 5px 5px;
+	}
+
+	.textinput input.filled ~ label,{
+	  font-size: 0.6em;
+	  font-weight: 600;
+	  position: absolute;
+	}
+	
+	.textinput input:focus ~ label {
+		color: #0074D9
+	}
+
+	input {
+		background-color: transparent;
+		color: darken(rgb(136, 136, 136), 15);
+		font-size: 18px;
+		margin: 9px 0 7px 0;
+		margin: 0;
+		padding: 30px 5px 5px 5px;
+		outline: none;
+		width: 100%;
+		border-bottom: 1px solid gray;
+	}
+	
+	input:focus {
+		color: black;
+		background-color: rgba(179, 182, 194, 0.123);
+		box-shadow: 0px 3px 4px -2px rgba(0,0,115,0.25) inset;
+		font-weight: bold;
+		letter-spacing: -0.01em;
+	}
+	
+	/* codepen wrapper */
+	html {
+		min-height: 100%;
+	}
+	body {
+		background-color: #ddd;
+		background-image: linear-gradient(to bottom, #f3f3f3 50%  , #acacac 90%);
+		color:#888888;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		padding: 20px;	
+	}
+	h1, p {
+		color: #333;
+		font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+		font-size: 1.6em;
+		margin: 0.5em 0 1em 0;
+		text-align: center;
+	}
+	p {
+		font-size: 80%;
+	}

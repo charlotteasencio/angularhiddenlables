@@ -1,0 +1,25 @@
+<h1>Infield Top Aligned Form Labels</h1>
+
+
+<form>
+	<ul>
+        <li [class.my-class]="isLabelVisible">
+            <input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text"/>
+            <label for="name">First Name</label>
+        </li>
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
+			<label for="lastname">Last Name</label>
+		</li>
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
+			<label for="email">Email</label>
+		</li>
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
+			<label for="spiritanimal">Spirit Animal</label>
+		</li>
+	</ul>
+</form>
+
+<p>Quick demo for <a href="http://uxmovement.com/forms/why-infield-top-aligned-form-labels-are-quickest-to-scan">this article</a></p>
