@@ -14,6 +14,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
        // document.getElementsByTagName('input') : to gell all Docuement imputs
        const inputList = [].slice.call((<HTMLElement>this.el.nativeElement).getElementsByTagName('input'));
+       const labelList = [].slice.call((<HTMLElement>this.el.nativeElement).getElementsByTagName('label'));
         inputList.forEach((input: HTMLElement) => {
             input.addEventListener('focus', () => {
                 let inputClass = input.className;
