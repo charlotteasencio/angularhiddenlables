@@ -57,6 +57,18 @@ body {
 	.my-class {
 		background: fuchsia;
 	}
+
+	.my-class2 {
+		background: paleturquoise;
+	}
+
+	.my-class3 {
+		background: yellow;
+	}
+
+	.my-class4 {
+		background: tomato;
+	}
 	
 	.pinkShit input{
 		padding: 10px 5px 5px 5px;
