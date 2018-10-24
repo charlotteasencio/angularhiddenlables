@@ -1,25 +1,25 @@
-<h1>Infield Top Aligned Form Labels</h1>
+<!--<h1>Infield Top Aligned Form Labels</h1>
 
 
 <form>
 	<ul>
-        <li [ngClass]="{'my-class-hidden':id === 1 }" (focusin)="addClass(id=1)" [ngClass]="{'my-class-show':id === 2 }" (focusout)="addClass(id=2)" >
-            <input type="text"/>
+        <li [class.my-class]="isLabelVisible">
+            <input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text"/>
             <label for="name">First Name</label>
         </li>
-		<li [ngClass]="{'my-class-hidden':id === 1 }" (focusin)="addClass(id=1)" [ngClass]="{'my-class-show':id === 2 }" (focusout)="addClass(id=2)" >
-			<input type="text" />
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
 			<label for="lastname">Last Name</label>
 		</li>
-        <li [ngClass]="{'my-class-hidden':id === 1 }" (focusin)="addClass(id=1)" [ngClass]="{'my-class-show':id === 2 }" (focusout)="addClass(id=2)" >
-			<input type="text" />
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
 			<label for="email">Email</label>
 		</li>
-        <li [ngClass]="{'my-class-hidden':id === 1 }" (focusin)="addClass(id=1)" [ngClass]="{'my-class-show':id === 2 }" (focusout)="addClass(id=2)" >
-			<input type="text" />
+		<li [class.my-class]="isLabelVisible">
+			<input (focus)="isLabelVisible = !isLabelVisible" (blur)="isLabelVisible = !isLabelVisible" type="text" />
 			<label for="spiritanimal">Spirit Animal</label>
 		</li>
 	</ul>
 </form>
 
-<p>Quick demo for <a href="http://uxmovement.com/forms/why-infield-top-aligned-form-labels-are-quickest-to-scan">this article</a></p>
+<p>Quick demo for <a href="http://uxmovement.com/forms/why-infield-top-aligned-form-labels-are-quickest-to-scan">this article</a></p>-->

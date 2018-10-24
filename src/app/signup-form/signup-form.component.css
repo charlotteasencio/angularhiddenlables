@@ -1,4 +1,4 @@
-*, *:before, *:after {
+/**, *:before, *:after {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
@@ -10,10 +10,10 @@ body {
 	font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
 	}
 	
-	form, ul, li, input, label {
+form, ul, li, input, label {
 		box-sizing: border-box;
 		display: block;
-	}
+}
 	
 	ul {
 		background-color: #fffdfa;
@@ -35,19 +35,17 @@ body {
 	}
 	
 	label {
-		/* labels are after the input in the HTML...*/
 		color: lighten(#888888, 15);
 		font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
 		font-size: 70%;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		
-		/* ... move it up top ... */
+		//move to top
 		position: absolute;
 		top: 10px;
 		left: 10px;
 		
-		/*... so that we can use a sibling selector.*/
 	}
 
 	.my-class-hidden input {
@@ -57,10 +55,6 @@ body {
 	.my-class-hidden label {
 		display: none;
 	}
-
-	/*.my-class {
-		background: fuchsia
-	}*/
 
 	.my-class label {
 		display: none;
@@ -110,27 +104,4 @@ body {
 		box-shadow: 0px 3px 4px -2px rgba(0,0,115,0.25) inset;
 		font-weight: bold;
 		letter-spacing: -0.01em;
-	}
-	
-	/* codepen wrapper */
-	html {
-		min-height: 100%;
-	}
-	body {
-		background-color: #ddd;
-		background-image: linear-gradient(to bottom, #f3f3f3 50%  , #acacac 90%);
-		color:#888888;
-		font-family: Helvetica, Arial, sans-serif;
-		font-size: 16px;
-		padding: 20px;	
-	}
-	h1, p {
-		color: #333;
-		font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
-		font-size: 1.6em;
-		margin: 0.5em 0 1em 0;
-		text-align: center;
-	}
-	p {
-		font-size: 80%;
-	}
+	}*/

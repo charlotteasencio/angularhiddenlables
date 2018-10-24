@@ -1,0 +1,97 @@
+body {
+	color  : #888888;
+	background: #fffdfa;
+	font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+}
+
+form, div, input, label, .mainDiv {
+    box-sizing: border-box;
+    display: block;
+}
+
+.mainDiv {
+    background-color: #fffdfa;
+    border: 5px solid #888888;
+    list-style-type: none;
+    margin: 3em auto;
+    padding: 0;
+    width: 350px;
+}
+
+.secondaryDiv {
+    border-bottom: 1px solid lighten(#888888, 25);
+    margin-top: -1px; 
+    position: relative;
+}
+
+label, input {
+    transition: color 0.4s ease, background-color 0.1s ease-in-out;
+}
+
+label {
+    /* labels are after the input in the HTML...*/
+    color: lighten(#888888, 15);
+    font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-size: 70%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    /* ... move it up top ... */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    /*... so that we can use a sibling selector.*/
+}
+
+.my-class-hidden input {
+    padding: 20px 5px 5px 5px
+}
+
+.my-class-hidden label {
+    display: none;
+}
+
+.secondaryDiv input.filled ~ label,{
+    font-size: 0.6em;
+    font-weight: 600;
+    position: absolute;
+}
+
+.secondaryDiv input:focus ~ label {
+    color: #0074D9
+}
+
+input {
+    background-color: transparent;
+    color: darken(rgb(136, 136, 136), 15);
+    font-size: 18px;
+    margin: 9px 0 7px 0;
+    margin: 0;
+    padding: 30px 5px 5px 5px;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+/*input:focus {
+    color: black;
+    background-color: rgba(179, 182, 194, 0.123);
+    box-shadow: 0px 3px 4px -2px rgba(0,0,115,0.25) inset;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+}*/
+
+.active {
+    background-color: hotpink;
+}
+
+
+/*p {
+    font-family: Lato;
+  }
+  
+  .active {
+    border: 2px solid red;
+    background-color: greenyellow;
+  }*/

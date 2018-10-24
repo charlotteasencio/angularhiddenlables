@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-signup-form',
@@ -13,12 +13,12 @@ export class SignupFormComponent  {
 
   }
 
-  /*myMethod() { 
+  myMethod() { 
     console.log("focused")
   }
 
   myOtherMethod() {
     console.log("unfocused")
-  }*/
+  }
 
 }
